@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header__content">
-            <router-link to="/" class="header__link">[ Smart Space]</router-link>
+            <router-link to="/" class="header__link">[ Smart Space ]</router-link>
         </div>
     </div>
 </template>
