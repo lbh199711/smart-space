@@ -1,10 +1,5 @@
-import logging
 from fastapi import FastAPI, Body
-from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
-from typing import List, Optional
-
-from http import HTTPStatus
+from fastapi.middleware.cors import CORSMiddleware
 
 import uvicorn
 import pickle
@@ -18,6 +13,20 @@ from query import get_rooms_by_user_id, get_room_by_room_id, get_user_by_usernam
 ## APP setup
 # FastApi
 app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 with open('classifier.pkl', 'rb') as fid:
     classifier = pickle.load(fid)
 
@@ -27,6 +36,7 @@ db_url = config.get('ALL', 'DATABASE_URL')
 
 # init db
 db_engine, db_session = init_db(db_url)
+
     
 ## Routing
 @app.get("/")

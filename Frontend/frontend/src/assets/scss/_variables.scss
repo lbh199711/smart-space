@@ -1,0 +1,49 @@
+// globally used
+// colors
+$color-white: #fff;
+$color-black: #000;
+$color-antique-gray: #cfd8d9;
+$color-blue-stone: #176c67;
+$color-cyprus: #0b3230;
+$color-elf-green: #1D8A84;
+$color-red: #6C171C;
+$color-gray: #aab6ae;
+
+// color mapping
+$color-primary: $color-white;
+$color-secondary: $color-antique-gray;
+$color-highlight: $color-blue-stone;
+$color-text: $color-black;
+$color-button-text: $color-white;
+$color-link: $color-cyprus;
+$color-link-highlight: $color-elf-green;
+$color-button: $color-blue-stone;
+$color-button-highlight: $color-elf-green;
+$color-warning: $color-red;
+$color-loader: $color-blue-stone;
+$color-disabled: $color-gray;
+
+// font size
+$font-size-lg: 2rem;
+$font-size-md3: 1.75rem;
+$font-size-md2: 1.5rem;
+$font-size-md: 1.25rem;
+$font-size-sm: 1rem;
+
+// font family
+$font-primary: "Helvetica", Sans-Serif;
+
+// letter spacing
+$letter-spacing-default: -1px;
+$letter-spacing-original: 0;
+
+// padding
+$global-side-padding: 2.5rem;
+$global-side-padding-mobile: 1.5rem;
+$global-width: 85%;
+$global-width-mobile: 100%;
+$global-max-width: 85rem;
+
+// width
+$tablet-width: 80rem;
+$mobile-width: 47.99rem;
