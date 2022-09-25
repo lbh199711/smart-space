@@ -1,0 +1,893 @@
+|--- co2 <= 438.50
+|   |--- temp <= 24.95
+|   |   |--- humidity <= 58.57
+|   |   |   |--- humidity <= 53.99
+|   |   |   |   |--- humidity <= 53.97
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- humidity >  53.97
+|   |   |   |   |   |--- temp <= 22.53
+|   |   |   |   |   |   |--- co2 <= 417.00
+|   |   |   |   |   |   |   |--- lights <= 3.50
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- lights >  3.50
+|   |   |   |   |   |   |   |   |--- lights <= 4.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- lights >  4.50
+|   |   |   |   |   |   |   |   |   |--- co2 <= 414.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- co2 >  414.00
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 5.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- lights >  5.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- co2 >  417.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- temp >  22.53
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- humidity >  53.99
+|   |   |   |   |--- humidity <= 54.38
+|   |   |   |   |   |--- temp <= 22.55
+|   |   |   |   |   |   |--- temp <= 22.39
+|   |   |   |   |   |   |   |--- temp <= 22.38
+|   |   |   |   |   |   |   |   |--- humidity <= 54.31
+|   |   |   |   |   |   |   |   |   |--- lights <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 54.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  54.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- humidity >  54.31
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  22.38
+|   |   |   |   |   |   |   |   |--- humidity <= 54.27
+|   |   |   |   |   |   |   |   |   |--- co2 <= 417.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- co2 >  417.00
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 418.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  418.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- humidity >  54.27
+|   |   |   |   |   |   |   |   |   |--- co2 <= 423.50
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 417.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  417.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- co2 >  423.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  22.39
+|   |   |   |   |   |   |   |--- temp <= 22.40
+|   |   |   |   |   |   |   |   |--- co2 <= 412.50
+|   |   |   |   |   |   |   |   |   |--- co2 <= 407.50
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 4.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- lights >  4.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- co2 >  407.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- co2 >  412.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 54.27
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 433.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  433.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  54.27
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 421.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  421.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- temp >  22.40
+|   |   |   |   |   |   |   |   |--- temp <= 22.53
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.45
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- temp >  22.45
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 54.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  54.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- temp >  22.53
+|   |   |   |   |   |   |   |   |   |--- co2 <= 418.00
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 409.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  409.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- co2 >  418.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- temp >  22.55
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- humidity >  54.38
+|   |   |   |   |   |--- temp <= 24.55
+|   |   |   |   |   |   |--- lights <= 51.50
+|   |   |   |   |   |   |   |--- lights <= 9.50
+|   |   |   |   |   |   |   |   |--- temp <= 23.30
+|   |   |   |   |   |   |   |   |   |--- humidity <= 57.98
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- humidity >  57.98
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 422.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  422.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 21
+|   |   |   |   |   |   |   |   |--- temp >  23.30
+|   |   |   |   |   |   |   |   |   |--- humidity <= 57.60
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 56.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  56.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 25
+|   |   |   |   |   |   |   |   |   |--- humidity >  57.60
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- lights >  9.50
+|   |   |   |   |   |   |   |   |--- temp <= 23.90
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.10
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.10
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- temp >  23.90
+|   |   |   |   |   |   |   |   |   |--- temp <= 24.20
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |--- temp >  24.20
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 34.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- lights >  34.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- lights >  51.50
+|   |   |   |   |   |   |   |--- temp <= 24.54
+|   |   |   |   |   |   |   |   |--- lights <= 62.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 57.42
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  57.42
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- lights >  62.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  24.54
+|   |   |   |   |   |   |   |   |--- co2 <= 413.00
+|   |   |   |   |   |   |   |   |   |--- humidity <= 55.07
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  55.07
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- co2 >  413.00
+|   |   |   |   |   |   |   |   |   |--- co2 <= 425.00
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 423.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  423.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- co2 >  425.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- temp >  24.55
+|   |   |   |   |   |   |--- humidity <= 54.68
+|   |   |   |   |   |   |   |--- lights <= 155.50
+|   |   |   |   |   |   |   |   |--- temp <= 24.74
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  24.74
+|   |   |   |   |   |   |   |   |   |--- lights <= 146.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- lights >  146.50
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 24.78
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- temp >  24.78
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- lights >  155.50
+|   |   |   |   |   |   |   |   |--- temp <= 24.85
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  24.85
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- humidity >  54.68
+|   |   |   |   |   |   |   |--- lights <= 112.00
+|   |   |   |   |   |   |   |   |--- temp <= 24.69
+|   |   |   |   |   |   |   |   |   |--- humidity <= 55.33
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 54.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  54.97
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  55.33
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  24.69
+|   |   |   |   |   |   |   |   |   |--- humidity <= 54.72
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 429.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  429.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  54.72
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 24.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- temp >  24.70
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- lights >  112.00
+|   |   |   |   |   |   |   |   |--- temp <= 24.57
+|   |   |   |   |   |   |   |   |   |--- humidity <= 55.45
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 55.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  55.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- humidity >  55.45
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  24.57
+|   |   |   |   |   |   |   |   |   |--- temp <= 24.61
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 55.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  55.38
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  24.61
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 163.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- lights >  163.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |--- humidity >  58.57
+|   |   |   |--- temp <= 22.80
+|   |   |   |   |--- humidity <= 60.99
+|   |   |   |   |   |--- temp <= 22.46
+|   |   |   |   |   |   |--- temp <= 22.23
+|   |   |   |   |   |   |   |--- humidity <= 58.99
+|   |   |   |   |   |   |   |   |--- humidity <= 58.95
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- humidity >  58.95
+|   |   |   |   |   |   |   |   |   |--- lights <= 7.50
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- lights >  7.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- humidity >  58.99
+|   |   |   |   |   |   |   |   |--- humidity <= 59.02
+|   |   |   |   |   |   |   |   |   |--- lights <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.19
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- lights >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- humidity >  59.02
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  22.23
+|   |   |   |   |   |   |   |--- humidity <= 58.62
+|   |   |   |   |   |   |   |   |--- temp <= 22.31
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- temp >  22.31
+|   |   |   |   |   |   |   |   |   |--- lights <= 12.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  12.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  58.62
+|   |   |   |   |   |   |   |   |--- lights <= 5.50
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.32
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- temp >  22.32
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 58.74
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  58.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- lights >  5.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.65
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.39
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.65
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |--- temp >  22.46
+|   |   |   |   |   |   |--- temp <= 22.69
+|   |   |   |   |   |   |   |--- humidity <= 59.15
+|   |   |   |   |   |   |   |   |--- humidity <= 59.06
+|   |   |   |   |   |   |   |   |   |--- humidity <= 59.02
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  59.02
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 427.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  427.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- humidity >  59.06
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.49
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- lights >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- temp >  22.49
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 433.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  433.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |--- humidity >  59.15
+|   |   |   |   |   |   |   |   |--- temp <= 22.60
+|   |   |   |   |   |   |   |   |   |--- humidity <= 60.76
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 60.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  60.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |--- humidity >  60.76
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 60.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  60.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |--- temp >  22.60
+|   |   |   |   |   |   |   |   |   |--- humidity <= 59.82
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 59.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  59.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |--- humidity >  59.82
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 60.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  60.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- temp >  22.69
+|   |   |   |   |   |   |   |--- humidity <= 59.76
+|   |   |   |   |   |   |   |   |--- humidity <= 58.60
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.73
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  22.73
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- humidity >  58.60
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.62
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.73
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.73
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.62
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  59.76
+|   |   |   |   |   |   |   |   |--- temp <= 22.70
+|   |   |   |   |   |   |   |   |   |--- lights <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 6.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- lights >  6.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  22.70
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- humidity >  60.99
+|   |   |   |   |   |--- humidity <= 61.02
+|   |   |   |   |   |   |--- co2 <= 427.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- co2 >  427.00
+|   |   |   |   |   |   |   |--- temp <= 22.49
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  22.49
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- humidity >  61.02
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- temp >  22.80
+|   |   |   |   |--- class: False
+|   |--- temp >  24.95
+|   |   |--- humidity <= 54.12
+|   |   |   |--- class: False
+|   |   |--- humidity >  54.12
+|   |   |   |--- humidity <= 54.97
+|   |   |   |   |--- humidity <= 54.93
+|   |   |   |   |   |--- humidity <= 54.52
+|   |   |   |   |   |   |--- temp <= 25.05
+|   |   |   |   |   |   |   |--- humidity <= 54.49
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  54.49
+|   |   |   |   |   |   |   |   |--- temp <= 25.04
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- temp >  25.04
+|   |   |   |   |   |   |   |   |   |--- co2 <= 431.00
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- co2 >  431.00
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 434.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  434.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- temp >  25.05
+|   |   |   |   |   |   |   |--- co2 <= 426.50
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- co2 >  426.50
+|   |   |   |   |   |   |   |   |--- co2 <= 427.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 54.49
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  54.49
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- co2 >  427.50
+|   |   |   |   |   |   |   |   |   |--- lights <= 138.50
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 126.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- lights >  126.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  138.50
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 431.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  431.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |--- humidity >  54.52
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- humidity >  54.93
+|   |   |   |   |   |--- lights <= 141.50
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- lights >  141.50
+|   |   |   |   |   |   |--- lights <= 147.50
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- lights >  147.50
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |--- humidity >  54.97
+|   |   |   |   |--- temp <= 25.01
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- temp >  25.01
+|   |   |   |   |   |--- lights <= 120.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- lights >  120.00
+|   |   |   |   |   |   |--- class: False
+|--- co2 >  438.50
+|   |--- lights <= 215.50
+|   |   |--- temp <= 22.78
+|   |   |   |--- humidity <= 59.02
+|   |   |   |   |--- lights <= 72.50
+|   |   |   |   |   |--- humidity <= 58.64
+|   |   |   |   |   |   |--- lights <= 71.50
+|   |   |   |   |   |   |   |--- lights <= 28.50
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- lights >  28.50
+|   |   |   |   |   |   |   |   |--- temp <= 22.45
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- temp >  22.45
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- lights >  71.50
+|   |   |   |   |   |   |   |--- co2 <= 591.50
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- co2 >  591.50
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- humidity >  58.64
+|   |   |   |   |   |   |--- temp <= 22.65
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  22.65
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- lights >  72.50
+|   |   |   |   |   |--- lights <= 83.50
+|   |   |   |   |   |   |--- temp <= 22.62
+|   |   |   |   |   |   |   |--- temp <= 22.61
+|   |   |   |   |   |   |   |   |--- temp <= 22.60
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  22.60
+|   |   |   |   |   |   |   |   |   |--- lights <= 76.50
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 556.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  556.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- lights >  76.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  22.61
+|   |   |   |   |   |   |   |   |--- co2 <= 569.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.28
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.28
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 546.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  546.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- co2 >  569.50
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- temp >  22.62
+|   |   |   |   |   |   |   |--- co2 <= 532.50
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- co2 >  532.50
+|   |   |   |   |   |   |   |   |--- lights <= 82.50
+|   |   |   |   |   |   |   |   |   |--- lights <= 73.50
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 58.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  58.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- lights >  73.50
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.68
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- lights >  82.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.01
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.01
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- lights >  83.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- humidity >  59.02
+|   |   |   |   |--- temp <= 22.61
+|   |   |   |   |   |--- co2 <= 465.50
+|   |   |   |   |   |   |--- humidity <= 59.20
+|   |   |   |   |   |   |   |--- lights <= 7.50
+|   |   |   |   |   |   |   |   |--- humidity <= 59.17
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.49
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  22.49
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- humidity >  59.17
+|   |   |   |   |   |   |   |   |   |--- co2 <= 445.00
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- lights >  3.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- co2 >  445.00
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 6.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- lights >  6.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- lights >  7.50
+|   |   |   |   |   |   |   |   |--- lights <= 10.50
+|   |   |   |   |   |   |   |   |   |--- co2 <= 459.00
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 450.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  450.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- co2 >  459.00
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 59.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  59.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- lights >  10.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 59.17
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 12.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- lights >  12.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- humidity >  59.17
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 11.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- lights >  11.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |--- humidity >  59.20
+|   |   |   |   |   |   |   |--- humidity <= 60.99
+|   |   |   |   |   |   |   |   |--- lights <= 16.50
+|   |   |   |   |   |   |   |   |   |--- lights <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 22.53
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- temp >  22.53
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 12.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- lights >  12.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- lights >  16.50
+|   |   |   |   |   |   |   |   |   |--- co2 <= 455.00
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 59.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  59.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- co2 >  455.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- humidity >  60.99
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- co2 >  465.50
+|   |   |   |   |   |   |--- humidity <= 59.17
+|   |   |   |   |   |   |   |--- co2 <= 613.50
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- co2 >  613.50
+|   |   |   |   |   |   |   |   |--- co2 <= 652.00
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- co2 >  652.00
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- humidity >  59.17
+|   |   |   |   |   |   |   |--- humidity <= 59.26
+|   |   |   |   |   |   |   |   |--- temp <= 22.56
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- temp >  22.56
+|   |   |   |   |   |   |   |   |   |--- lights <= 21.50
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 634.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  634.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- lights >  21.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  59.26
+|   |   |   |   |   |   |   |   |--- lights <= 40.50
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- lights >  40.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- temp >  22.61
+|   |   |   |   |   |--- co2 <= 482.00
+|   |   |   |   |   |   |--- humidity <= 59.76
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- humidity >  59.76
+|   |   |   |   |   |   |   |--- humidity <= 59.78
+|   |   |   |   |   |   |   |   |--- temp <= 22.66
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- temp >  22.66
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- humidity >  59.78
+|   |   |   |   |   |   |   |   |--- lights <= 2.00
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- lights >  2.00
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.64
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 59.95
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  59.95
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- temp >  22.64
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- co2 >  482.00
+|   |   |   |   |   |   |--- temp <= 22.62
+|   |   |   |   |   |   |   |--- humidity <= 59.26
+|   |   |   |   |   |   |   |   |--- co2 <= 638.00
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- co2 >  638.00
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- humidity >  59.26
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  22.62
+|   |   |   |   |   |   |   |--- class: False
+|   |   |--- temp >  22.78
+|   |   |   |--- co2 <= 484.50
+|   |   |   |   |--- temp <= 23.24
+|   |   |   |   |   |--- lights <= 109.50
+|   |   |   |   |   |   |--- humidity <= 57.49
+|   |   |   |   |   |   |   |--- lights <= 59.50
+|   |   |   |   |   |   |   |   |--- temp <= 23.09
+|   |   |   |   |   |   |   |   |   |--- lights <= 21.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  21.00
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 57.41
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  57.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |--- temp >  23.09
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- lights >  59.50
+|   |   |   |   |   |   |   |   |--- lights <= 90.00
+|   |   |   |   |   |   |   |   |   |--- temp <= 23.07
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 465.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  465.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  23.07
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 88.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- lights >  88.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- lights >  90.00
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- humidity >  57.49
+|   |   |   |   |   |   |   |--- temp <= 22.83
+|   |   |   |   |   |   |   |   |--- co2 <= 442.00
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- co2 >  442.00
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.39
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.39
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  22.83
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- lights >  109.50
+|   |   |   |   |   |   |--- humidity <= 57.85
+|   |   |   |   |   |   |   |--- temp <= 23.23
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- temp >  23.23
+|   |   |   |   |   |   |   |   |--- lights <= 150.50
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- lights >  150.50
+|   |   |   |   |   |   |   |   |   |--- co2 <= 471.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- co2 >  471.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- humidity >  57.85
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- temp >  23.24
+|   |   |   |   |   |--- temp <= 24.86
+|   |   |   |   |   |   |--- lights <= 6.50
+|   |   |   |   |   |   |   |--- temp <= 23.49
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  23.49
+|   |   |   |   |   |   |   |   |--- temp <= 23.57
+|   |   |   |   |   |   |   |   |   |--- humidity <= 56.77
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 56.58
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  56.58
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- humidity >  56.77
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.55
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  23.57
+|   |   |   |   |   |   |   |   |   |--- temp <= 23.62
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 56.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  56.52
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  23.62
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- lights >  6.50
+|   |   |   |   |   |   |   |--- temp <= 23.26
+|   |   |   |   |   |   |   |   |--- lights <= 121.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- lights >  121.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 57.06
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  57.06
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- temp >  23.26
+|   |   |   |   |   |   |   |   |--- temp <= 24.79
+|   |   |   |   |   |   |   |   |   |--- temp <= 23.27
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 141.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- lights >  141.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- temp >  23.27
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 7.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- lights >  7.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- temp >  24.79
+|   |   |   |   |   |   |   |   |   |--- humidity <= 54.97
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 54.55
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  54.55
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  54.97
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- temp >  24.86
+|   |   |   |   |   |   |--- humidity <= 54.26
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- humidity >  54.26
+|   |   |   |   |   |   |   |--- humidity <= 54.97
+|   |   |   |   |   |   |   |   |--- humidity <= 54.49
+|   |   |   |   |   |   |   |   |   |--- temp <= 25.05
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- temp >  25.05
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 140.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- lights >  140.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- humidity >  54.49
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  54.97
+|   |   |   |   |   |   |   |   |--- humidity <= 54.99
+|   |   |   |   |   |   |   |   |   |--- lights <= 150.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  150.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- humidity >  54.99
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |--- co2 >  484.50
+|   |   |   |   |--- co2 <= 582.50
+|   |   |   |   |   |--- co2 <= 488.50
+|   |   |   |   |   |   |--- temp <= 23.27
+|   |   |   |   |   |   |   |--- lights <= 142.50
+|   |   |   |   |   |   |   |   |--- temp <= 23.23
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  23.23
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.75
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.75
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- lights >  142.50
+|   |   |   |   |   |   |   |   |--- lights <= 150.50
+|   |   |   |   |   |   |   |   |   |--- humidity <= 58.81
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  58.81
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- lights >  150.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  23.27
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- co2 >  488.50
+|   |   |   |   |   |   |--- humidity <= 49.95
+|   |   |   |   |   |   |   |--- co2 <= 567.50
+|   |   |   |   |   |   |   |   |--- co2 <= 557.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- co2 >  557.50
+|   |   |   |   |   |   |   |   |   |--- temp <= 24.36
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- temp >  24.36
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- co2 >  567.50
+|   |   |   |   |   |   |   |   |--- temp <= 24.36
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  24.36
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- humidity >  49.95
+|   |   |   |   |   |   |   |--- co2 <= 502.50
+|   |   |   |   |   |   |   |   |--- temp <= 23.27
+|   |   |   |   |   |   |   |   |   |--- lights <= 124.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- lights >  124.50
+|   |   |   |   |   |   |   |   |   |   |--- lights <= 149.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- lights >  149.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- temp >  23.27
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- co2 >  502.50
+|   |   |   |   |   |   |   |   |--- co2 <= 504.50
+|   |   |   |   |   |   |   |   |   |--- temp <= 23.24
+|   |   |   |   |   |   |   |   |   |   |--- temp <= 23.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |   |--- temp >  23.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- temp >  23.24
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- co2 >  504.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- co2 >  582.50
+|   |   |   |   |   |--- humidity <= 51.00
+|   |   |   |   |   |   |--- temp <= 24.36
+|   |   |   |   |   |   |   |--- humidity <= 50.01
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- humidity >  50.01
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- temp >  24.36
+|   |   |   |   |   |   |   |--- temp <= 24.37
+|   |   |   |   |   |   |   |   |--- co2 <= 583.50
+|   |   |   |   |   |   |   |   |   |--- lights <= 178.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- lights >  178.50
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- co2 >  583.50
+|   |   |   |   |   |   |   |   |   |--- lights <= 177.50
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- lights >  177.50
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 50.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  50.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- temp >  24.37
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- humidity >  51.00
+|   |   |   |   |   |   |--- temp <= 22.80
+|   |   |   |   |   |   |   |--- humidity <= 58.64
+|   |   |   |   |   |   |   |   |--- humidity <= 56.78
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- humidity >  56.78
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  58.64
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- temp >  22.80
+|   |   |   |   |   |   |   |--- humidity <= 57.99
+|   |   |   |   |   |   |   |   |--- humidity <= 57.80
+|   |   |   |   |   |   |   |   |   |--- humidity <= 56.59
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- humidity >  56.59
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 56.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  56.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- humidity >  57.80
+|   |   |   |   |   |   |   |   |   |--- temp <= 22.87
+|   |   |   |   |   |   |   |   |   |   |--- humidity <= 57.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- humidity >  57.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- temp >  22.87
+|   |   |   |   |   |   |   |   |   |   |--- co2 <= 676.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- co2 >  676.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- humidity >  57.99
+|   |   |   |   |   |   |   |   |--- class: False
+|   |--- lights >  215.50
+|   |   |--- humidity <= 56.90
+|   |   |   |--- temp <= 23.66
+|   |   |   |   |--- temp <= 23.35
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- temp >  23.35
+|   |   |   |   |   |--- class: True
+|   |   |   |--- temp >  23.66
+|   |   |   |   |--- class: False
+|   |   |--- humidity >  56.90
+|   |   |   |--- class: False
+
